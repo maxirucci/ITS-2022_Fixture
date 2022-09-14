@@ -1,0 +1,1 @@
+export const firebase = "Esto es una conexión a firebase";
