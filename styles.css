@@ -1,0 +1,61 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* PIE DE PÁGINA*/
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  font-size: small;
+}
+
+footer>.info {
+  display: flex;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*REDES SOCIALES*/
+footer>.info>.redes-sociales {
+  width: 90%;
+  
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+footer>.info>.redes-sociales>a>img {
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/*EQUIPO*/
+footer>.info>.equipo {
+  padding-inline-end: 8px;
+}
+
+footer .integrante {
+  list-style: none;
+  font-style: italic;
+
+  font-size: x-small;
+
+  text-align: end;
+}
+
+footer>.materia {
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  font-weight: bolder;
+  text-align: center;
+}
