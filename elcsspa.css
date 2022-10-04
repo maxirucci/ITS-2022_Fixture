@@ -1,40 +1,39 @@
-body
-{
- text-align:center;
- width:100%;
- margin:0 auto;
- padding:0px;
- font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
- background: linear-gradient(rgb(255, 255, 255), #ffffff);
+body {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  background: linear-gradient(rgb(255, 255, 255), #ffffff);
 }
-#header_wrapper
-{
- width:100%;
- min-width:1000px;
- background-color:#922148;
+
+#header_wrapper {
+  width: 100%;
+  min-width: 1000px;
+  background-color: #922148;
 }
-#header
-{
- width:1080px;
- margin:0px auto;
- padding:15px;
- height:95px;
+
+#header {
+  width: 1080px;
+  margin: 0px auto;
+  padding: 15px;
+  height: 95px;
 }
-header li
-{
- list-style-type:none;
- float:left;
- text-align:left;
- color:rgb(255, 255, 255);
+
+header li {
+  list-style-type: none;
+  float: left;
+  text-align: left;
+  color: rgb(255, 255, 255);
 }
-#header #sitename
-{
- margin-top:25px;
+
+#header #sitename {
+  margin-top: 25px;
 }
-#header #sitename a
-{
- color:white;
- text-decoration:none;
- font-size:30px;
- font-weight:900;
+
+#header #sitename a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
 }
