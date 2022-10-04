@@ -30,6 +30,7 @@ Podemos verificar que efectivamente estamos en la rama en la que queremos trabaj
 ## Hacer el commit (local)
 Después de hacer los cambios necesarios
 ```bash
+> git add .
 > git commit -m '<comentarios del commit>'
 ```
 <br>
