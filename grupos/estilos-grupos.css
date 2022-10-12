@@ -1,0 +1,41 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  padding: .6rem;
+  background-color: #B81A47;
+}
+
+header > button {
+  background-color: #7a0a2c;
+  padding: .4rem 1rem;
+  border-radius: .7rem;
+}
+
+header > button > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+header > button:hover {
+  background-color: #fa1459;
+}
+
+/* PORTADA */
+#portada {
+  text-align: center;
+  margin: 0.5rem 0.5rem 1.7rem 0.5rem;
+}
+
+#portada > img {
+  width: 40rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* FECHAS */
+.bandera {
+  height: 2rem;
+}

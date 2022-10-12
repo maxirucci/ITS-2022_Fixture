@@ -6,6 +6,20 @@
     font-family: sans-serif;
 }
 
+body {
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100vh;
+
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    background: linear-gradient(rgb(255, 255, 255), #ffffff);
+}
+
+
+
 .header {
     background-color: #B81A47;
     display: flex;
@@ -52,4 +66,119 @@
     background-color: aliceblue;
     color: coral;
     transform: scale(1.1);
+}
+
+
+
+
+#section_wrapper {
+    width: 100%;
+    min-width: 1000px;
+    background-color: #6e0927;
+}
+
+#section {
+    width: 1080px;
+    margin: 0px auto;
+    padding: 3px;
+}
+
+#section #sitename {
+    text-align: end;
+}
+
+#section #sitename a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+}
+
+#div1 {
+    margin-top: 1rem;
+}
+
+#div1 p {
+    font-size: xx-large;
+}
+
+
+
+
+/* TABLA */
+table {
+    margin-top: 0.5rem;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table thead a {
+    color: #000;
+    text-decoration: none;
+}
+
+table tr {
+    width: 500px;
+}
+
+table tr td {
+    font-size: medium;
+    padding: .5rem;
+    text-align: center;
+}
+
+
+
+/* PIE DE PÁGINA*/
+footer {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    background-color: #6e092745;
+    font-size: small;
+}
+
+footer>.info {
+    display: flex;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*REDES SOCIALES*/
+footer>.info>.redes-sociales {
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>.info>.redes-sociales>a>img {
+    width: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/*EQUIPO*/
+footer>.info>.equipo {
+    padding-inline-end: 8px;
+}
+
+footer .integrante {
+    list-style: none;
+    font-style: italic;
+
+    font-size: x-small;
+
+    text-align: end;
+}
+
+footer>.materia {
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-weight: bolder;
+    text-align: center;
 }
