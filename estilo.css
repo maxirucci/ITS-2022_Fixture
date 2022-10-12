@@ -7,45 +7,18 @@
 }
 
 body {
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100vh;
+
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    padding: 0px;
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
     background: linear-gradient(rgb(255, 255, 255), #ffffff);
-    min-height: 100vh;
 }
 
-#header_wrapper {
-    width: 100%;
-    min-width: 1000px;
-    background-color: #922148;
-}
 
-#header {
-    width: 1080px;
-    margin: 0px auto;
-    padding: 15px;
-    height: 95px;
-}
-
-header li {
-    list-style-type: none;
-    float: left;
-    text-align: left;
-    color: rgb(255, 255, 255);
-}
-
-#header #sitename {
-    margin-top: 25px;
-}
-
-#header #sitename a {
-    color: white;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 900;
-}
 
 .header {
     background-color: #B81A47;
@@ -95,11 +68,74 @@ header li {
     transform: scale(1.1);
 }
 
-* PIE DE PÁGINA*/ footer {
-    position: relative;
+
+
+
+#section_wrapper {
+    width: 100%;
+    min-width: 1000px;
+    background-color: #6e0927;
+}
+
+#section {
+    width: 1080px;
+    margin: 0px auto;
+    padding: 3px;
+}
+
+#section #sitename {
+    text-align: end;
+}
+
+#section #sitename a {
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+}
+
+#div1 {
+    margin-top: 1rem;
+}
+
+#div1 p {
+    font-size: xx-large;
+}
+
+
+
+
+/* TABLA */
+table {
+    margin-top: 0.5rem;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+table thead a {
+    color: #000;
+    text-decoration: none;
+}
+
+table tr {
+    width: 500px;
+}
+
+table tr td {
+    font-size: medium;
+    padding: .5rem;
+    text-align: center;
+}
+
+
+
+/* PIE DE PÁGINA*/
+footer {
+    position: absolute;
     bottom: 0;
 
     width: 100%;
+    background-color: #6e092745;
     font-size: small;
 }
 
