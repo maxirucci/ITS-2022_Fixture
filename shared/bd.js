@@ -8,8 +8,6 @@ export function getEquiposGrupo(grupo) {
     return equipos.filter(item => item.grupo === grupo);
 }
 
-
-
 const mockEquipos = [
     { grupo: 'a', equipo: 'Senegal', bandera: 'senegal.png' },
     { grupo: 'a', equipo: 'Países Bajos', bandera: 'paisesBajos.png' },
