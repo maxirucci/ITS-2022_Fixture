@@ -8,8 +8,6 @@ export function getEquiposGrupo(grupo) {
     return equipos.filter(item => item.grupo === grupo);
 }
 
-
-
 const mockEquipos = [
     { grupo: 'a', equipo: 'Senegal', bandera: 'senegal.png' },
     { grupo: 'a', equipo: 'Países Bajos', bandera: 'paisesBajos.png' },
@@ -56,22 +54,22 @@ const mockEquipos = [
 //Creamos un array con usuarios random
 const usuarios = [{
         id: 1,
-        name: "Juan",
+        name: "juan",
         password: "123",
     },
     {
         id: 2,
-        name: "Pedro",
+        name: "pedro",
         password: "1234",
     },
     {
         id: 3,
-        name: "Pablo",
+        name: "pablo",
         password: "12345",
     },
     {
         id: 4,
-        name: "Esteban",
+        name: "esteban",
         password: "12",
     },
 ];
