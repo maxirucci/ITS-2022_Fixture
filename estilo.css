@@ -1,3 +1,5 @@
+/* cambiamos el color de las letras del proyecto*/
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +42,7 @@ body {
 }
 
 .header .nav-links a {
-    color: #000;
+    color: white;
     text-decoration: none;
     font-size: medium;
 }
@@ -91,6 +93,7 @@ body {
 }
 
 #div1 {
+    color: white;
     margin-top: 1rem;
 }
 
@@ -113,10 +116,12 @@ table thead a {
 }
 
 table tr {
+    color: white;
     width: 500px;
 }
 
 table tr td {
+    color: white;
     font-size: medium;
     padding: .5rem;
     text-align: center;
