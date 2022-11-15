@@ -1,0 +1,66 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/Fondo\ Mundial\ 2022\ De\ Qatar.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quiz {
+  background: #ba0f42;
+  width: 30rem;
+  padding: 4rem;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 2px 0px;
+  border-radius: 50px;
+}
+
+#question {
+  font-family: sans-serif;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.buttons {
+  margin-top: 30px;
+}
+
+.button {
+  background-color: #54071e;
+  width: 250px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: .3rem;
+  padding: 10px 20px;
+  margin: 10px 40px 10px 0px;
+}
+
+#progress {
+  color: white;
+  font-size: 18px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #fa1459;
+}
+
+#btn0:focus,
+#btn1:focus,
+#btn2:focus,
+#btn3:focus {
+  outline: 0;
+}
