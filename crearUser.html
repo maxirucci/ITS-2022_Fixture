@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="main.css">
-    <title>LOGIN</title>
+    <title>CREAR</title>
 </head>
 
 <body>
@@ -17,20 +17,20 @@
             <label for="exampleSelect1" class="form-label mt-4">Usuario</label>
             <span class="rojie blackie">*</span>
             <div class="form-floating mb-3">
-                <input type="text" class="form-control bordeColor animacionshake" id="user" placeholder="name">
+                <input type="text" class="form-control bordeColor animacionshake" id="userC" placeholder="name">
             </div>
             <div>
                 <label for="exampleSelect1" class="form-label mt-4">Contraseña</label>
                 <span class="rojie blackie">*</span>
-                <input type="password" id="pass" class="form-control bordeColor animacionshake" placeholder="Password">
+                <input type="password" id="passC" class="form-control bordeColor animacionshake" placeholder="Password">
             </div>
-
-            <div class="row">
-                <div class="btn-ingreso">
-                    <button type="button" class="btn btn-outline-primary" onclick="verificarDatos()">Ingresar</button>
-                    <button type="button" class="btn btn-outline-primary" onclick="goToCrear()">Crear</button>
-                </div>
-            </div>
+       
+        <div class="btn-crear col-12">
+            <button type="button" class="btn btn-outline-primary" onclick="verificarCreacion()">CREAR</button>
+            <button type="button" class="btn btn-outline-primary" onclick="goToBack()">VOLVER</button>
+        </div>
+            
+           
 
         </div>
     </div>

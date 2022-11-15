@@ -44,7 +44,12 @@ body {
 
 .btn-ingreso{
   margin-top: 6%;
-  margin-left: 60%;
+  margin-left: 20%;
+}
+
+.btn-crear{
+  margin-top: 6%;
+  margin-left: 17%;
 }
 
 .container-narrow > hr {
