@@ -43,13 +43,18 @@ body {
 }
 
 .btn-ingreso{
-  margin-top: 6%;
-  margin-left: 20%;
+  margin-top: 3%;
+  margin-left: 75%;
 }
 
 .btn-crear{
-  margin-top: 6%;
-  margin-left: 17%;
+  margin-top: 3%;
+  margin-left: 65%;
+}
+
+.btn-ingresoI {
+  margin-top: 5%;
+  margin-left: 25%;
 }
 
 .container-narrow > hr {
@@ -71,6 +76,7 @@ body {
   background-repeat: no-repeat;
 	background-size: cover;
   position: center;
+  height: 200px;
 }
 
 .btn{
@@ -115,8 +121,8 @@ body {
 		line-height: 80px;
   }
   .containertwo{
-    width: 533px;
-    height: 322px;
+    width: 660px;
+    height: 450px;
     margin-top: 10%;
     margin-left: 25%;
     margin-right: 25%;
