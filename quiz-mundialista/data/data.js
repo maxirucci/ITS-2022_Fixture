@@ -5,7 +5,7 @@ export const data = [
     answer: "1930",
   },
   {
-    question: "¿Cuál es la selección que ha ganado más vaces la copa del mundo?",
+    question: "¿Cuál es la selección que ha ganado más veces la copa del mundo?",
     choices: ["Brasil","Italia","Alemania"],
     answer: "Brasil",
   },
@@ -30,7 +30,7 @@ export const data = [
     answer: "Alemania",
   },
   {
-    question: "¿Qué pais ha participado más veces en la copa del mundo?",
+    question: "¿Qué país ha participado más veces en la copa del mundo?",
     choices: ["Brasil","Alemania","Argentina"],
     answer: "Brasil",
   },

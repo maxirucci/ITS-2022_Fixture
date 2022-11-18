@@ -1,0 +1,82 @@
+body {
+    position: relative;
+    padding-bottom: 6rem;
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    background: linear-gradient(#ba0f42, #54071e, #fa1459);
+    background-image: url("images/estadio.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fondo{
+  background-image: url("images/Copa.jpg");
+  background-repeat: no-repeat;
+	background-size: cover;
+  position: center;
+  height: 200px;
+}
+
+
+.btn{
+  background-color: rgb(21, 180, 167);
+}
+
+.btn-crear{
+  margin-top: 3%;
+  margin-left: 30%;
+}
+
+.btn-ingreso {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+/* Responsive: Tablets */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+  
+  .containertwo{
+    width: 660px;
+    height: 450px;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 30px;
+  }
+  
+  .containerthree{
+    position: center;
+    position: relative;
+    left: 48%;
+    color: #000;
+  }
+
+  .rojie {
+    color: red;
+  }
+
+  .blackie {
+    font-weight: bold;
+  }
+
+  .bordeColor {
+    border: 2px solid #5701CD !important;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  .animacionshake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
