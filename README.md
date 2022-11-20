@@ -15,10 +15,10 @@ Trabajo práctico --> Prácticas profesionalizantes 1
 >/ git stash
 // para almacenar los archivos temporalmente 
 >/ git checkout main
->/ git pull origin master
+>/ git pull origin master/main
 // para ya descargarlos a tu computadora
 >/ git checkout TuRama
->/ git merge master
+>/ git merge master/main
 ```
 <br>
 
