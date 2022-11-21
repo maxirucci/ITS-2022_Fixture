@@ -1,0 +1,28 @@
+body{
+    background-image: url(../recursos/Fondo\ Mundial\ 2022\ De\ Qatar.jpg);
+}
+
+h1 {
+    color: white;
+}
+
+/* HEADER */
+header {
+    padding: .6rem;
+    background-color: #B81A47;
+}
+
+header > button {
+    background-color: #7a0a2c;
+    padding: .4rem 1rem;
+    border-radius: .7rem;
+}
+
+header > button > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header > button:hover {
+    background-color: #fa1459;
+}

@@ -15,6 +15,8 @@ body {
     margin: 0 auto;
     font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
     background: linear-gradient(#ba0f42, #54071e, #fa1459);
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .header {
@@ -40,7 +42,7 @@ body {
 }
 
 .header .nav-links a {
-    color: #000;
+    color: white;
     text-decoration: none;
     font-size: medium;
 }
@@ -90,17 +92,14 @@ body {
     font-weight: 600;
 }
 
-#div1 {
+#titulo {
+    color: white;
     margin-top: 1rem;
-}
-
-#div1 p {
     font-size: xx-large;
 }
 
 
 /* TABLA */
-
 table {
     margin-top: 0.5rem;
     border-collapse: collapse;
@@ -113,18 +112,24 @@ table thead a {
 }
 
 table tr {
+    color: white;
     width: 500px;
 }
 
 table tr td {
+    color: white;
     font-size: medium;
     padding: .5rem;
     text-align: center;
 }
 
+/* MODAL USUARIO */
+#usuario-avatar {
+    width: 30%;
+}
+
 
 /* PIE DE PÁGINA*/
-
 footer {
     position: absolute;
     bottom: 0;
@@ -139,8 +144,7 @@ footer>.info {
 }
 
 
-/*REDES SOCIALES*/
-
+/* REDES SOCIALES */
 footer>.info>.redes-sociales {
     width: 90%;
     display: grid;
@@ -156,8 +160,7 @@ footer>.info>.redes-sociales>a>img {
 }
 
 
-/*EQUIPO*/
-
+/* EQUIPO */
 footer>.info>.equipo {
     padding-inline-end: 8px;
 }
@@ -175,3 +178,7 @@ footer>.materia {
     font-weight: bolder;
     text-align: center;
 }
+
+.foto-carrusel {
+    height: 14rem;
+}   

@@ -10,6 +10,18 @@ Trabajo práctico --> Prácticas profesionalizantes 1
 ```
 <br>
 
+## Lo primero seria actualizar el repositorio local, bajando los cambios que se hicieron anteriormente
+```bash
+>/ git stash
+// para almacenar los archivos temporalmente 
+>/ git checkout main
+>/ git pull origin master/main
+// para ya descargarlos a tu computadora
+>/ git checkout TuRama
+>/ git merge master/main
+```
+<br>
+
 ## Crear rama y cambiar a esa rama
 ```bash
 >/ git branch <nombreRama>
@@ -26,11 +38,16 @@ Podemos verificar que efectivamente estamos en la rama en la que queremos trabaj
 * miRama
 ```
 
+## Subimos los cambios al repositorio local de git, desde nuestra computadora
+```bash
+>/ git add [nombre archivo]
+>/ git checkout <nombreRama>
+```
+
 
 ## Hacer el commit (local)
 Después de hacer los cambios necesarios
 ```bash
-> git add .
 > git commit -m '<comentarios del commit>'
 ```
 <br>

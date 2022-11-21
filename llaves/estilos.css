@@ -1,0 +1,30 @@
+body {
+  font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+  background: linear-gradient(#ba0f42, #54071e, #fa1459);
+}
+
+.mascota {
+  width: 15%;
+}
+
+thead td {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+input.text {
+  text-align: center;
+  width: 8rem;
+  /* text-decoration: line-through; */
+}
+
+.final {
+  display: inline;
+  width: 9rem;
+}
+
+td p {
+  text-align: center;
+  font-size: small;
+}

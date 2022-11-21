@@ -4,6 +4,8 @@
 <head>
     <title>El fixture mas epico</title>
     <link rel="stylesheet" href="./estilo.css">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,100 +16,179 @@
         <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="#">COPA MUNDIAL DE LA FIFA CATAR 2022</a>
+                    <a href="./plantelArgentina/plantelArgentina.html">Plantel de la seleccion Argentina</a>
                 </li>
                 <li>
-                    <a href="#">CONTENIDO ORIGINAL</a>
+                    <a href="./proyecto_estadio/pag_estadio.html">Los estadios del mundial</a>
                 </li>
                 <li>
-                    <a href="#">NOTICIAS</a>
+                    <a href="https://www.tycsports.com/">Noticias</a>
+                </li>
+                <li>
+                    <a href="./quiz-mundialista/quiz-mundialista.html">Mostra tus conocimientos</a>
                 </li>
             </ul>
         </nav>
-        <a href="#" class="btn"><button>Contacto</button></a>
-        <button><i class="fa-solid fa-user"></i></button>
-    </header>
 
+        <div>
+            <a href="#" class="btn"><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-contacto">Contanos</button></a>
+            <button id="btn-mostrar-usuario" title="usuario" data-bs-toggle="modal" data-bs-target="#modal-usuario"><i class="fa-solid fa-user"></i></button>
+        </div>
+
+        <!-- Modal contacto -->
+        <div class="modal fade" id="modal-contacto" tabindex="-1" aria-labelledby="modalContacto" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5">Contanos tu experiencia</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3 mx-1 row">
+                            <label for="exampleFormControlInput1" class="form-label col-6">Nombre</label>
+                            <input type="email" class="form-control col-6" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="mb-3 mx-1 row">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn-enviar-contacto" type="button" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal usuario -->
+        <div class="modal fade" id="modal-usuario" tabindex="-1" aria-labelledby="modalUsuario" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p>Usuario</p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="./images/usuarioAvatar.jpg" alt="Avater del usuario" id="usuario-avatar">
+                        <h1 id="titulo-modal" class="modal-title fs-5">Usuario</h1>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="btn-cerrar-sesion" type="button" class="btn btn-primary">Cerrar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <section>
         <div id="section_wrapper">
             <div id="section">
                 <p id="sitename">
-                    <a href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022">Visitá la página oficial de la Fifa &#174</a>
+                    <a href="https://www.fifa.com/fifaplus/es/tournaments/mens/worldcup/qatar2022">Visitá la página oficial de la
+						Fifa &#174</a>
                 </p>
             </div>
         </div>
 
-        <div id="div1">
-            <center>
-                <p>Uno De los Mejores Mundiales</p>
-            </center>
+        <h1 class="text-center mb-4" id="titulo">Uno de los Mejores Mundiales</h1>
 
-            <br>
-
-            <center><img src="https://i.ytimg.com/vi/KTpVLLUfquA/maxresdefault.jpg" width="500" height="250"></center>
+        <!-- Carrusel -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-5">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="recursos/home/portada.jpg" class="d-block w-100 foto-carrusel" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/home/cr7.gif" class="d-block w-100 foto-carrusel" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="recursos/home/nigga.gif" class="d-block w-100 foto-carrusel" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <center>
             <table border="1px">
+                <thead bgcolor="coral">
+                    <td><a href="./grupos/grupoA.html">GRUPO A</a></td>
+                    <td><a href="./grupos/grupoB.html">GRUPO B</a></td>
+                    <td><a href="./grupos/grupoC.html">GRUPO C</a></td>
+                    <td><a href="./grupos/grupoD.html">GRUPO D</a></td>
+                    <td><a href="./grupos/grupoE.html">GRUPO E</a></td>
+                    <td><a href="./grupos/grupoF.html">GRUPO F</a></td>
+                    <td><a href="./grupos/grupoG.html">GRUPO G</a></td>
+                    <td><a href="./grupos/grupoH.html">GRUPO H</a></td>
+                </thead>
+
+                <tr>
+                    <td>Qatar</td>
+                    <td>Inglaterra</td>
+                    <td>Argentina</td>
+                    <td>Francia</td>
+                    <td>España</td>
+                    <td>Belgica</td>
+                    <td>Brasil</td>
+                    <td>Portugal</td>
+                </tr>
+
+                <tr>
+                    <td>Ecuador</td>
+                    <td>Irán </td>
+                    <td>Arabia Saudita </td>
+                    <td>Australia</td>
+                    <td>Costa Rica</td>
+                    <td>Canada</td>
+                    <td>Serbia</td>
+                    <td>Ghana</td>
+                </tr>
+
+                <tr>
+                    <td>Senegal</td>
+                    <td>Estados Unidos</td>
+                    <td>México</td>
+                    <td>Dinamarca</td>
+                    <td>Alemania </td>
+                    <td>Marruecos</td>
+                    <td>Suiza</td>
+                    <td>Uruguay</td>
+                </tr>
+
+                <tr>
+                    <td>Paises Bajos</td>
+                    <td>Gales</td>
+                    <td>Polonia </td>
+                    <td>Túnez</td>
+                    <td>Japón</td>
+                    <td>Croacia</td>
+                    <td>Camerún</td>
+                    <td>Corea Del Sur</td>
+                </tr>
+            </table>
         </center>
-
-        <thead bgcolor="coral">
-            <td><a href="./grupos/grupoA.html">GRUPO A</a></td>
-            <td><a href="./grupos/grupoB.html">GRUPO B</a></td>
-            <td><a href="./grupos/grupoC.html">GRUPO C</a></td>
-            <td><a href="./grupos/grupoD.html">GRUPO D</a></td>
-            <td><a href="./grupos/grupoE.html">GRUPO E</a></td>
-            <td><a href="./grupos/grupoF.html">GRUPO F</a></td>
-            <td><a href="./grupos/grupoG.html">GRUPO G</a></td>
-            <td><a href="./grupos/grupoH.html">GRUPO H</a></td>
-        </thead>
-
-        <tr>
-            <td>Qatar</td>
-            <td>Inglaterra</td>
-            <td>Argentina</td>
-            <td>Francia</td>
-            <td>España</td>
-            <td>Belgica</td>
-            <td>Brasil</td>
-            <td>Portugal</td>
-        </tr>
-
-        <tr>
-            <td>Ecuador</td>
-            <td>Irán </td>
-            <td>Arabia Saudita </td>
-            <td>Australia</td>
-            <td>Costa Rica</td>
-            <td>Canada</td>
-            <td>Serbia</td>
-            <td>Ghana</td>
-        </tr>
-
-        <tr>
-            <td>Senegal</td>
-            <td>Estados Unidos</td>
-            <td>México</td>
-            <td>Dinamarca</td>
-            <td>Alemania </td>
-            <td>Marruecos</td>
-            <td>Suiza</td>
-            <td>Uruguay</td>
-        </tr>
-
-        <tr>
-            <td>Paises Bajos</td>
-            <td>Gales</td>
-            <td>Polonia </td>
-            <td>Túnez</td>
-            <td>Japón</td>
-            <td>Croacia</td>
-            <td>Camerún</td>
-            <td>Corea Del Sur</td>
-        </tr>
-
-        </table>
     </section>
 
     <footer>
@@ -142,7 +223,10 @@
 
     </footer>
 
+    <script src="./home.js"></script>
     <script src="https://kit.fontawesome.com/ec291dbd3d.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 
 </html>

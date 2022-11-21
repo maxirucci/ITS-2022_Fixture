@@ -1,49 +1,47 @@
-//Creamos un array con usuarios random
-const usuarios = [{
-        id: 1,
-        name: "juan",
-        password: "123",
-    },
-    {
-        id: 2,
-        name: "pedro",
-        password: "1234",
-    },
-    {
-        id: 3,
-        name: "pablo",
-        password: "12345",
-    },
-    {
-        id: 4,
-        name: "esteban",
-        password: "12",
-    },
-];
+import { bdUsuario } from './shared/firebase.service.js';
+
+//Ir a página de registrar usuario
+const btnGoRegistrar = document.getElementById('btn-registrar');
+btnGoRegistrar.addEventListener('click', () => {
+    location.href = "crearUser.html";
+})
+
 
 //Metodo que verifica los datos y si son correctos redirecciona al fixture
-var verificarDatos = function() {
-    console.log("verificarDatos");
+const btnVerificarDatos = document.getElementById('btnVerificarDatos');
+btnVerificarDatos.addEventListener('click', async () => {
+    console.log("Verificando datos...");
+
     var usuarioLogin = document.getElementById("user").value;
     let pass = document.getElementById("pass").value;
-    var sigue = true;
-    var i = 0;
-
+    
     if (usuarioLogin == '') {
-        alert("Ops! Te falta el usuario crack");
+        return alert("Ops! Te falta el usuario crack");
+
     }
     if (pass == '') {
-        alert("Ops! Te falta  el pass crack");
-    }
-    const resultName = usuarios.find(usuario => usuario.name == usuarioLogin);
-    console.log(resultName);
-
-    if (resultName.password != pass) {
-        alert("Ops! PASS INCORRECTA");
+        return alert("Ops! Te falta  el pass crack");
     }
 
-    if (resultName.password == pass) {
-        location.href = "home.html";
+    let lista_usuarios = [];
+    const usuarios = await bdUsuario();
+    usuarios.forEach(element => {
+        lista_usuarios.push(element.data());
+    });
+
+    const resultName = lista_usuarios.find(usuario => usuario.usuario == usuarioLogin);
+
+    if(!resultName){
+        return alert("Ops! Usuario inexistente, por favor ingresa uno veridico masa o create uno");
     }
 
-}
+    if(!!resultName){
+        if (resultName.pass != pass) {
+            return alert("Ops! PASS INCORRECTA");
+        }
+        if (resultName.pass == pass) {
+            location.href = "home.html";
+            localStorage.setItem('usuario', usuarioLogin);
+        }
+    }
+})
